@@ -2,15 +2,20 @@ import React from "react";
 import "../../css/Header.css";
 import logo from "../../assets/amazon_logo.png";
 import { BiSearchAlt2 } from "react-icons/bi";
-import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import CartButton from "../Cart/CartButton";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header_left">
-        <img src={logo} alt="Loading..." />
-        <div className="location">Deliver to Bosnia</div>
+        <Link className="logo" to="/">
+          <img src={logo} alt="Loading..." />
+        </Link>
+        <div className="location">
+          <p className="upper">Deliver to</p>
+          <p className="lower">Bosnia and Herzeg...</p>
+        </div>
       </div>
       <div className="header_nav_search">
         <div className="search_container">
@@ -19,7 +24,7 @@ const Header = () => {
           </select>
           <input type="search" placeholder="Search Amazon" />
           <button className="search_button">
-            <BiSearchAlt2 />
+            <BiSearchAlt2 fontSize={26} />
           </button>
         </div>
       </div>
@@ -30,24 +35,18 @@ const Header = () => {
               EN
             </Link>
           </li>
-          <li>
-            <Link className="sign_in" to="/">
-              Hello, sign in
+          <li className="sign">
+            <Link style={{fontSize: "13px"}} className="sign_in" to="/">
+              Hello, sign in <span style={{fontWeight: "bold", fontSize: "14px"}}>Accounts & Lists</span>
+            </Link>
+          </li>
+          <li className="orders">
+            <Link style={{fontSize: "13px"}} to="/">
+              Returns <span style={{fontWeight: "bold", fontSize: "14px", display: "block"}}>& Orders</span> 
             </Link>
           </li>
           <li>
-            <Link className="orders" to="/">
-              Returns & Orders
-            </Link>
-          </li>
-          <li>
-            <Link className="cart_container" to="/cart">
-              <div className="cart">
-                <div className="quantity">1</div>
-                <AiOutlineShoppingCart />
-                <span>Cart</span>
-              </div>
-            </Link>
+           <CartButton />
           </li>
         </ul>
       </nav>

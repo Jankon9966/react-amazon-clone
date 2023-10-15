@@ -1,0 +1,35 @@
+.cart_container {
+    text-decoration: none;
+}
+
+.cart_container .cart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid transparent;
+}
+.cart_container .cart:hover {
+    border: 1px solid white;
+}
+
+.cart_container .cart .quantity {
+    position: absolute;
+    top: 14px;
+    left: 8px;
+    z-index: 10;
+    font-size: 14px;
+    color: orange;
+    font-weight: bold;
+}
+
+.cart_container .cart span {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
