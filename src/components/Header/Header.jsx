@@ -36,17 +36,29 @@ const Header = () => {
             </Link>
           </li>
           <li className="sign">
-            <Link style={{fontSize: "13px"}} className="sign_in" to="/">
-              Hello, sign in <span style={{fontWeight: "bold", fontSize: "14px"}}>Accounts & Lists</span>
+            <Link style={{ fontSize: "13px" }} className="sign_in" to="/">
+              Hello, sign in{" "}
+              <span style={{ fontWeight: "bold", fontSize: "14px" }}>
+                Accounts & Lists
+              </span>
             </Link>
           </li>
           <li className="orders">
-            <Link style={{fontSize: "13px"}} to="/">
-              Returns <span style={{fontWeight: "bold", fontSize: "14px", display: "block"}}>& Orders</span> 
+            <Link style={{ fontSize: "13px" }} to="/">
+              Returns{" "}
+              <span
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "14px",
+                  display: "block",
+                }}
+              >
+                & Orders
+              </span>
             </Link>
           </li>
           <li>
-           <CartButton />
+            <CartButton />
           </li>
         </ul>
       </nav>

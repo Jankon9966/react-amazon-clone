@@ -12,6 +12,7 @@
     margin-left: 10px;
     border: 1px solid transparent;
 }
+
 .cart_container .cart:hover {
     border: 1px solid white;
 }
@@ -29,7 +30,7 @@
 .cart_container .cart span {
     position: absolute;
     right: 6px;
-    bottom: 5px;
+    bottom: 6px;
     font-size: 15px;
     font-weight: bold;
 }

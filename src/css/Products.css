@@ -1,0 +1,13 @@
+.products {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 16rem;
+    z-index: 100;
+}

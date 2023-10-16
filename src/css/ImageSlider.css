@@ -1,0 +1,17 @@
+.slider {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left_arrow {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 6.7rem;
+}
+.right_arrow {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    right: 0;
+    top: 6.7rem;
+}

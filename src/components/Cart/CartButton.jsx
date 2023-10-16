@@ -7,8 +7,11 @@ const CartButton = () => {
   return (
     <Link className="cart_container" to="/cart">
       <div className="cart">
-        <div className="quantity">1</div>
-        <AiOutlineShoppingCart fontSize={34} style={{margin: "0 25px 0 6px"}} />
+        <div className="quantity">0</div>
+        <AiOutlineShoppingCart
+          fontSize={34}
+          style={{ margin: "0 25px 3px 6px" }}
+        />
         <span>Cart</span>
       </div>
     </Link>
