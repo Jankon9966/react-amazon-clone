@@ -1,19 +1,10 @@
 import React from "react";
 import "../../css/ProductItem.css";
+import { Link } from "react-router-dom";
 
-const ProductItem = (props) => {
+const ProductItem = () => {
   return (
-    <div className="product_container">
-      <div className="product_title">
-        <h3>{props.title}</h3>
-      </div>
-      <div className="product_image">
-        <img src={props.image} alt="Loading product..." />
-      </div>
-      <div className="description">
-        <p>{props.desc}</p>
-      </div>
-    </div>
+    <div className=""></div>
   );
 };
 

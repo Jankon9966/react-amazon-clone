@@ -36,7 +36,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="sign">
-            <Link style={{ fontSize: "13px" }} className="sign_in" to="/">
+            <Link style={{ fontSize: "13px" }} className="sign_in" to="/sign_in">
               Hello, sign in{" "}
               <span style={{ fontWeight: "bold", fontSize: "14px" }}>
                 Accounts & Lists
